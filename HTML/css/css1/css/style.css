@@ -1,0 +1,487 @@
+/*reset*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*оформление документа*/
+/*общие*/
+
+body {
+    font-family: Tahoma, Geneva, sans-serif;
+    background-color: rgb( 247, 253, 254);
+}
+
+.wrapper {
+    width: 100%;
+    min-width: 960px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+li {
+    float: left;
+    list-style-type: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+h1,h2 {
+    font-size: 35px;
+}
+
+p {
+    font-size: 20px;
+}
+
+/*стили хэдера*/
+
+header {
+    position: relative;
+
+    width: 960px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+div.logo a {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+
+    width: 116px;
+    height: 45px;
+
+    background-image: url(../res/oxi.png);
+    background-repeat: no-repeat;
+}
+
+nav ul.header {
+    position: absolute;
+    top: 20px;
+    right: 0;
+
+    width: 501px;
+    height: 40px;
+}
+
+ul.header li a {
+    font-size: 14px;
+    padding: 13px 35px;
+    text-transform: uppercase;
+    color: #92969e;
+}
+
+ul.header li:hover {
+    border-radius: 20px;
+    background-color: #0ebfdd;
+}
+
+ul.header li:hover a
+{
+    color: #f5f5f5;
+}
+
+ul.header li:after {
+    position: absolute;
+    top: 7px;
+
+    content: '.';
+
+    color: #92969e;
+}
+
+ul.header li:first-child:after {
+    position: absolute;
+    top: -15px;
+
+    content: none;
+
+    color: #fff;
+}
+
+/*ситли intro*/
+
+div.intro {
+    height: 596px;
+
+    color: #fff;
+    background-image: url(../res/bg.jpg);
+    background-position: center;
+}
+
+div.intro div.widescreen {
+    position: relative;
+
+    width: 960px;
+    margin: 0 auto;
+}
+
+div.intro div.widescreen h1 {
+    position: relative;
+    top: 400px;
+
+    width: 200px;
+    margin: 0 auto;
+}
+
+div.intro div.widescreen h1:after {
+    position: absolute;
+    top: 12px;
+    left: -22px;
+
+    width: 12px;
+    height: 12px;
+
+    content: '';
+
+    background-image: url(../res/littlestar.png);
+}
+
+div.intro div.widescreen h1:before {
+    position: absolute;
+    top: 12px;
+    left: 190px;
+
+    width: 12px;
+    height: 12px;
+
+    content: '';
+
+    background-image: url(../res/littlestar.png);
+}
+
+div.intro div.widescreen p {
+    position: absolute;
+    top: 465px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+div.intro div.widescreen > h2 > a {
+    width: 200px;
+}
+
+/*стили about*/
+
+div.about {
+    position: relative;
+
+    width: 960px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+div.about h2 {
+    position: relative;
+
+    top: 65px;
+    margin: 0 auto;
+    width: 120px;
+    
+    text-align: center;
+}
+
+div.about h2 a {
+    color: #0ebfdd;
+}
+
+div.about p {
+    position: absolute;
+    top: 130px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    color: #45494d;
+}
+
+/*стили team*/
+
+div.team {
+    position: relative;
+    background-color: #0ebfdd;
+}
+
+div.team div.widescreen {
+    position: relative;
+
+    width: 960px;
+    height: 600px;
+    margin: 0 auto;
+
+    color: #fff;
+}
+
+div.team div.widescreen h2 {
+    position: relative;
+
+    width: 120px;
+    top: 60px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+div.team > div.widescreen > a {
+    margin: 460px auto;
+    text-transform: uppercase;
+    color: #fff;
+    width: 117px;
+}
+
+span {
+    font-size: 15px;
+    font-weight: lighter;
+    font-style: italic;
+
+    text-align: center;
+}
+
+div.people {
+    position: absolute;
+    top: 180px;
+
+    width: 700px;
+    margin: 0 20% 0 20%;
+
+    text-align: center;
+}
+
+div.aboutTeam {
+    float: left;
+    padding-right: 50px;
+}
+
+div.aboutTeam p {
+    text-align: center;
+}
+
+div.aboutTeam a {
+    width: 100%;
+    height: 60px;
+}
+
+div.aboutTeam img {
+    margin-bottom: 30px;
+}
+
+/*стили services*/
+
+div.services {
+    position: relative;
+    height: 435px;
+}
+
+div.services div.widescreen {
+    position: relative;
+
+    width: 960px;
+    margin: 0 auto;
+
+    color: #fff;
+}
+
+div.services div.widescreen h2 {
+    margin-top: 65px;
+    text-align: center;
+    color: #0ebfdd;
+}
+
+div.services div.widescreen h2 a {
+    width: 200px;
+    margin-left: 380px;
+
+    color: #0ebfdd;
+}
+
+div.services div.widescreen > p {
+    margin: 30px auto 0;
+    text-align: center;
+    color: #6a6d71;
+}
+
+div.services div.widescreen ul > li > p {
+    font-size: 12px;
+    color: #6a6d71;
+}
+
+div.services div.widescreen > ul {
+    margin-top: 50px;
+}
+
+div.services div.widescreen h3 {
+    padding: 5px 0 10px 0;
+    color: #6a6d71;
+}
+
+div.widescreen > ul li {
+    display: inline-block;
+
+    width: 310px;
+    padding-bottom: 60px;
+}
+
+div.widescreen ul li img {
+    float: left;
+    margin: 0 10px;
+    text-align: left;
+}
+
+/*катра*/
+
+iframe {
+    position: relative;
+    width: 100%;
+    height: 500px; 
+}
+
+/*стили футера*/
+
+footer {
+    position: relative;
+    height: 120px;
+    background-color: #45494d;
+}
+
+footer div.widescreen {
+    position: relative;
+
+    width: 960px;
+    margin: 0 auto;
+}
+
+nav ul.footer {
+    /*навигация*/
+    position: absolute;
+    top: 20px;
+    left: -20px;
+}
+
+ul.footer li a {
+    font-size: 14px;
+
+    margin: 13px 35px;
+
+    text-transform: uppercase;
+
+    color: #92969e;
+}
+
+ul.footer li:hover a {
+    color: #f5f5f5;
+}
+
+hr {
+    position: absolute;
+    left: 15px;
+
+    width: 922px;
+    margin-top: 76px;
+
+    border-color: #92969e;
+}
+
+div ul.other {
+    position: absolute;
+    top: 80px;
+    right: -20px;
+    /*навигация*/
+
+    width: 550px;
+    height: 13px;
+}
+
+ul.other li a {
+    font-size: 14px;
+    margin: 13px 35px;
+    color: #92969e;
+}
+
+ul.other li a:hover  {
+    color: #f5f5f5;
+}
+
+div.social {
+    position: absolute;
+    top: 20px;
+    left: 800px;
+
+    width: 150px;
+}
+
+div.mail {
+    width: 40px;
+    margin-bottom: -40px;
+
+    background-image: url(../res/mail.png);
+}
+
+div.facebook {
+    width: 40px;
+    margin-bottom: -40px;
+    margin-left: 100px;
+
+    background-image: url(../res/face.png);
+}
+
+div.twitter {
+    width: 40px;
+    margin-left: 50px;
+    background-image: url(../res/tvitt.png);
+}
+
+div.social div {
+    height: 40px;
+}
+

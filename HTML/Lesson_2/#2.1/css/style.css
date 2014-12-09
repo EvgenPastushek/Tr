@@ -1,0 +1,27 @@
+body {
+	font-family: Comic, sans-serif;
+	background-color: #B5B5B5;
+}
+
+.wrapper {
+	height: 550px;
+	width: 840px;
+	margin: 0 auto;
+	background-color: white;
+	box-shadow:  0 0 9px 1px;
+	padding: 25px 50px;
+}
+
+h1 {
+	text-align: center;
+}
+
+input, textarea {
+	padding: 10px;
+}
+
+textarea {	
+	font-family: Comic, sans-serif;
+	height: 30px;
+	width: 300px;
+}

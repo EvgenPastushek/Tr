@@ -1,0 +1,57 @@
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+	text-decoration: none;
+	font: bold italic 110% serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+.section {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+         
+}
+ 
+.section > li {
+    display: inline-block;
+    height: 20px;
+    position: relative;
+    margin: 0 5px;
+}
+
+.section ul {
+    position: absolute;
+    top: 20px;
+    display: none;   
+    margin-right: 20px;
+}
+
+li:hover {
+	background-color: #6181A7;
+}
+
+li:hover>ul {
+    display: block;
+    position: absolute;
+}
+
+ul.section1>li:hover>ul {
+    display: block;
+    position: absolute;
+    top: inherit;
+    left: inherit;
+    margin-top: -21px;
+    margin-left: 86px;
+}
+
+
+
+

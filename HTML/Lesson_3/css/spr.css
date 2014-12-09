@@ -1,0 +1,121 @@
+.home:before {
+	content: "";
+	background: url("Social.png") no-repeat -382px -25px;
+	width: 54px;
+	height: 53px;
+	position: absolute;
+	right: 175px;
+	top: 1px;
+}
+
+.goods:before {
+	content: "";
+	background: url("Social.png") no-repeat -324px -25px;
+	width: 54px;
+	height: 53px;
+	position: absolute;
+	right: 175px;
+	top: 1px;
+}
+
+.faq:before {
+	content: "";
+	background: url("Social.png") no-repeat -266px -25px;
+	width: 54px;
+	height: 53px;
+	position: absolute;
+	right: 175px;
+	top: 1px;
+}
+
+.conpamy:before {
+	content: "";
+	background: url("Social.png") no-repeat -92px -25px;
+	width: 54px;
+	height: 53px;
+	position: absolute;
+	right: 175px;
+	top: 1px;
+}
+
+.about:before {
+	content: "";
+	background: url("Social.png") no-repeat -150px -25px;
+	width: 54px;
+	height: 53px;
+	position: absolute;
+	right: 175px;
+	top: 1px;
+}
+
+.contact:before {
+	content: "";
+	background: url("Social.png") no-repeat -34px -25px;
+	width: 54px;
+	height: 53px;
+	position: absolute;
+	right: 175px;
+	top: 1px;
+}
+
+
+.home:hover:before {
+	content: "";
+	background: url("Social.png") no-repeat -208px -25px;
+	width: 54px;
+	height: 53px;
+	position: absolute;
+	right: 175px;
+	bottom: 10px;
+}
+
+.goods:hover:before {
+	content: "";
+	background: url("Social.png") no-repeat -208px -25px;
+	width: 54px;
+	height: 53px;
+	position: absolute;
+	right: 175px;
+	top: 1px;
+}
+
+.faq:hover:before {
+	content: "";
+	background: url("Social.png") no-repeat -208px -25px;
+	width: 54px;
+	height: 53px;
+	position: absolute;
+	right: 175px;
+	top: 1px;
+}
+
+.conpamy:hover:before {
+	content: "";
+	background: url("Social.png") no-repeat -208px -25px;
+	width: 54px;
+	height: 53px;
+	position: absolute;
+	right: 175px;
+	top: 1px;
+}
+
+.about:hover:before {
+	content: "";
+	background: url("Social.png") no-repeat -208px -25px;
+	width: 54px;
+	height: 53px;
+	position: absolute;
+	right: 175px;
+	top: 1px;
+}
+
+.contact:hover:before {
+	content: "";
+	background: url("Social.png") no-repeat -208px -25px;
+	width: 54px;
+	height: 53px;
+	position: absolute;
+	right: 175px;
+	top: 1px;
+}
+
