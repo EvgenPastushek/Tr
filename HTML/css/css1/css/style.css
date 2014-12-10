@@ -57,7 +57,6 @@ body {
 
 .wrapper {
     width: 100%;
-    min-width: 960px;
     height: 100%;
     margin: 0 auto;
 }
@@ -256,28 +255,25 @@ div.team {
 div.team div.widescreen {
     position: relative;
 
-    width: 960px;
-    height: 600px;
+    max-width: 960px;
     margin: 0 auto;
 
     color: #fff;
 }
 
 div.team div.widescreen h2 {
-    position: relative;
-
     width: 120px;
-    top: 60px;
+    padding-top: 50px;
     margin: 0 auto;
-
     text-align: center;
 }
 
 div.team > div.widescreen > a {
-    margin: 460px auto;
+    margin: 0 auto; 
+    padding-bottom: 100px;
     text-transform: uppercase;
     color: #fff;
-    width: 117px;
+    width: 120px;
 }
 
 span {
@@ -289,18 +285,16 @@ span {
 }
 
 div.people {
-    position: absolute;
-    top: 180px;
-
-    width: 700px;
-    margin: 0 20% 0 20%;
-
+    margin: 0 10% 0 10%;
+    width: 80%;
     text-align: center;
 }
 
 div.aboutTeam {
-    float: left;
-    padding-right: 50px;
+    display: inline-block;
+    width: 160px;
+    margin: 50px 35px;
+    line-height: 1;
 }
 
 div.aboutTeam p {
