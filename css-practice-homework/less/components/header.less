@@ -1,0 +1,31 @@
+/*параметры хэдера*/
+header
+{
+    height: 6em;
+}
+/*логотип в png или svg*/
+.logo
+{
+    float: left;
+    overflow: hidden;
+
+    margin: 1em 2em 1em .5em;
+
+    background-image: url(../media/logo.png);
+    background-image: url(../media/logo.svg);
+    background-repeat: no-repeat;
+    background-size: 8em;
+}
+
+.logo > a
+{
+    width: 6em;
+    height: 6em;
+}
+
+@media screen and (max-width: 728px) {
+
+	.logo {
+	margin: 1em 0em 1em .5em;
+}
+}

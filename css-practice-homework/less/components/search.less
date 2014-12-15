@@ -1,0 +1,56 @@
+/*стили поиска*/
+.search
+{
+    position: absolute;
+    height: 2em;
+    width: 15em;
+    top: 8em;
+    left: 67%;
+
+    display: block;
+}
+/*скрыть / показать поиск по клику*/
+.show-hide-search {
+    display: none;
+}
+
+.btn-search {
+    position:absolute;
+    right: 1em;
+    cursor: pointer;
+    width: 2em;
+    height: 2em;
+    background:url(../media/search.png)center 100% no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+}
+
+.input {
+    display:none;
+    position:absolute;
+    margin: 2%;
+}
+
+.show-hide-search:checked ~ .input{
+    display:block;
+}
+
+@media screen and (max-width: 728px)
+{
+    .search
+    {
+        top: 9em;
+        left: 13em;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .search
+    {
+        top: 11em;
+        left: 8.5em;
+    }
+}

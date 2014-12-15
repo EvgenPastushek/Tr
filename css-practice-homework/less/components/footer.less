@@ -1,0 +1,59 @@
+/*параметры футера*/
+footer {
+	overflow: hidden;
+	padding: 0 0 1em 0;
+}
+
+.hrfs {
+
+	a {
+		font-size: 1em;
+	}
+
+	li a:hover {
+	    color: #0677AB;
+	}
+
+	li:hover {
+	    background-color: #429FCB;
+	}
+}
+
+footer p
+{
+    float: left;
+
+    margin-left: 1em;
+}
+
+
+@media screen and (max-width: 728px)
+{
+    .hrfs a
+    {
+        font-size: .6em;
+    }
+    footer
+    {
+        width: 23em;
+        margin: 0 auto;
+        padding: 0 0 1em 1%;
+    }
+    .col-1-6
+    {
+        display: block;
+        float: none;
+
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    footer
+    {
+        width: 23em;
+        margin: 0 auto;
+        padding: 0 0 1em 1%;
+    }
+}
