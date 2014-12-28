@@ -1,0 +1,51 @@
+footer {
+	background-color: #0c2b29;
+	height: 8em;
+	padding: 0.5em;
+}
+
+.hrfs-left {
+	float: left;
+	margin-top: 1em;
+	li {
+		display: inline-block;
+		margin-right: 2em;
+	}
+		a {
+			display: block;
+			font-size: 1em;
+			text-decoration: none;
+			color: #b7c1c0;
+		}
+}
+
+.hrfs-right {
+	float: right;
+	margin-top: 1em;
+	li {
+		display: inline-block;
+		margin-left: 2em;
+	}
+		a {
+			display: block;
+			font-size: 1em;
+			text-decoration: none;
+			color: #b7c1c0;
+		}
+}
+
+@media screen and (max-width: 480px) {
+.hrfs-left {
+	float: left;
+	margin-top: 1em;
+	li {
+		display: block;
+		margin-right: 2em;
+		padding-bottom: 0.5em;
+	}
+}
+
+.hrfs-right {
+	margin-top: -7.5em;
+}
+}
