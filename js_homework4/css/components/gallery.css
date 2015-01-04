@@ -1,0 +1,168 @@
+/*стили галереи фотографий*/
+/*убираем белый фон при hover*/
+.carousel-labels > li:hover,
+.carousel-items > li:hover {
+  background-color: transparent;
+}
+.carousel-items,
+.carousel-labels {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+}
+.carousel-item {
+  display: block;
+  float: left;
+}
+.carousel-wrapper {
+  /*для наших экранов*/
+  margin: 0 auto;
+  max-width: 728px;
+  /*Сделал меньше 1144, что бы отсутствовала большая высота страницы*/
+  min-width: 350px;
+  position: relative;
+  padding-bottom: 40em;
+  overflow: hidden;
+}
+.carousel-items {
+  width: 1000%;
+  /*ширина для 10 слайдов*/
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  transition: left 0.5s ease-out;
+  -o-transition: left 0.5s ease-out;
+  -ms-transition: left 0.5s ease-out;
+  -moz-transition: left 0.5s ease-out;
+  -webkit-transition: left 0.5s ease-out;
+}
+.carousel-item {
+  width: 10%;
+  /*для одного слайда*/
+  height: 100%;
+  color: white;
+}
+img {
+  /*позиционирование картинки внутри блока*/
+  display: block;
+  margin: 1em auto;
+  width: 100%;
+}
+.carousel-labels {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: 0;
+  height: 2em;
+  width: 100%;
+  padding: 0 0 2em 25%;
+  text-align: center;
+}
+.carousel-selector {
+  display: none;
+}
+.carousel-label {
+  display: inline-block;
+}
+.carousel-label label {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #0677ab;
+  display: block;
+  cursor: pointer;
+}
+/*смена слайдов*/
+#slide1:checked ~ .carousel-items {
+  left: 0;
+}
+#slide1:checked ~ .carousel-labels .carousel-label:nth-child(1) label {
+  background-color: black;
+}
+#slide2:checked ~ .carousel-items {
+  left: -100%;
+}
+#slide2:checked ~ .carousel-labels .carousel-label:nth-child(2) label {
+  background-color: black;
+}
+#slide3:checked ~ .carousel-items {
+  left: -200%;
+}
+#slide3:checked ~ .carousel-labels .carousel-label:nth-child(3) label {
+  background-color: black;
+}
+#slide4:checked ~ .carousel-items {
+  left: -300%;
+}
+#slide4:checked ~ .carousel-labels .carousel-label:nth-child(4) label {
+  background-color: black;
+}
+#slide5:checked ~ .carousel-items {
+  left: -400%;
+}
+#slide5:checked ~ .carousel-labels .carousel-label:nth-child(5) label {
+  background-color: black;
+}
+#slide6:checked ~ .carousel-items {
+  left: -500%;
+}
+#slide6:checked ~ .carousel-labels .carousel-label:nth-child(6) label {
+  background-color: black;
+}
+#slide7:checked ~ .carousel-items {
+  left: -600%;
+}
+#slide7:checked ~ .carousel-labels .carousel-label:nth-child(7) label {
+  background-color: black;
+}
+#slide8:checked ~ .carousel-items {
+  left: -700%;
+}
+#slide8:checked ~ .carousel-labels .carousel-label:nth-child(8) label {
+  background-color: black;
+}
+#slide9:checked ~ .carousel-items {
+  left: -800%;
+}
+#slide9:checked ~ .carousel-labels .carousel-label:nth-child(9) label {
+  background-color: black;
+}
+#slide10:checked ~ .carousel-items {
+  left: -900%;
+}
+#slide10:checked ~ .carousel-labels .carousel-label:nth-child(10) label {
+  background-color: black;
+}
+@media screen and (max-width: 728px) {
+  .carousel-wrapper {
+    /*для наших экранов*/
+    margin: 0 auto;
+    width: 460px;
+    padding-bottom: 30em;
+  }
+  .carousel-label label {
+    /*уменьшение кругов*/
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+  }
+  .carousel-labels {
+    padding: 1em 0 3em 22%;
+  }
+  [class*='cool-'] {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  img {
+    /*позиционирование картинки внутри блока*/
+    margin: 2em auto;
+  }
+  .carousel-items {
+    top: 1em;
+  }
+}
+/*# sourceMappingURL=gallery.css.map */
