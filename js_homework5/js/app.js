@@ -4,7 +4,7 @@ var allNewsAdress = "https://cors-anywhere.herokuapp.com/babruysk.by/ajax_php/ne
 var oneNewsAdress = "https://cors-anywhere.herokuapp.com/http://babruysk.by/ajax_php/news-item-api.php?id=";
 
 //при клике на =заголовок "Свежие новости" запускается AJAX запрос
-var a = document.querySelector("h2");// выбираем второй заголовок
+var a = document.querySelector(".event-listener");// выбираем второй заголовок
 a.addEventListener("click", newsListLoader, false);
 
 // вытягиваем id по клику на объект
@@ -42,7 +42,11 @@ function onArticleTitleClick(id){ // функция нажатия на элем
 		catch (jsonNews){
 			alert("Получен объект!");
 		}
+		history.pushState(null, null, "#news/" + valueId); // изменяем адрес
 		newP.innerHTML = tmpl("newsTmpl", jsonObjNews);
+
+		var p = document.querySelector(".event-listener2");// выбираем второй заголовок
+		p.addEventListener("click", newsListLoader, false);
 	}
 checkedNews.send(null);
 window.scrollBy(0,-9999);
@@ -81,27 +85,39 @@ nodes.addEventListener("click", function() {
 	
 		var selection = prompt('Введите селектор для определения дочерних и родительских узлов', ".menu");
 		var startSearch = document.querySelector(selection);
-		
-		var children = startSearch.children;
-		console.log("Дочерние элементы: ");
-		for(var child in children) {
-			var item = children[child];
-			console.log(item);
-		}
-		
-		console.log("==========================");
-		
-		console.log("Родители : ");
-		var els = [];
-		startSearch = startSearch.parentNode;
-		while (startSearch) {
-			els.unshift(startSearch);
+		if (startSearch !== null) {
+
+			console.log("Выбранный элемент : ");
+			console.log(selection);
+			console.log("==========================");
+	
+			console.log("Дочерние элементы : ");
+			function enumChildNodes(node) {
+			    if (node && 1 == node.nodeType) {
+			        var child = node.firstChild;
+			        while (child) {
+			            if (1 == child.nodeType) {
+			                console.log(child.tagName);
+			                enumChildNodes(child);
+			            }
+			            child = child.nextSibling;
+			        }
+			    }
+			}
+			enumChildNodes(startSearch);
+			console.log("==========================");
+			
+			console.log("Родители : ");
+			var els = [];
 			startSearch = startSearch.parentNode;
+			while (startSearch) {
+				els.unshift(startSearch);
+				startSearch = startSearch.parentNode;
+			}
+			console.log(els);
 		}
-	console.log(els);
 });
 
-// вынес функцию, изза того, что иначе не работает (проблемы с eventListener)
 function newsListLoader() {// слушатель события click
 	var xhr = new XMLHttpRequest(); // начало AJAX запроса
 	xhr.open("GET", allNewsAdress); // адрес для получения новостей 
@@ -133,6 +149,7 @@ xhr.onload = function() {
 		catch (json){
 			alert("Получен объект!");
 		}
+	history.pushState(null, null, "#news"); // изменяем адрес
 	newP.innerHTML = tmpl("tmpl", jsonObj);
 	}
 xhr.send(null);
